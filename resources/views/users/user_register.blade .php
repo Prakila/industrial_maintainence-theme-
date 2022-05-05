@@ -137,7 +137,7 @@
                                             <li class="active" >
                                                 <a href="{{ route('user.index')  }}">
                                                     <i class="tim-icons icon-notes"></i>
-                                                    <p>{{ _('Approvals pending') }}</p>
+                                                    <p>{{ _('User Online Report') }}</p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -219,7 +219,7 @@
                                     <span class="navbar-toggler-bar bar3"></span>
                                 </button>
                             </div>
-                           <!-- <a class="navbar-brand" href="#">{{ $page ?? __('Dashboard') }}</a>-->
+                            <a class="navbar-brand" href="#">{{ $page ?? __('Dashboard') }}</a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -310,65 +310,46 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="content">
-    <div class="row">
-    <div class="col-md-8">
+                <div class="content">
+                        <div class="row">
+    <div class="col-md-12">
         <div class="card ">
             <div class="card-header">
                 <div class="row">
                     <div class="col-8">
-                        <h4 class="card-title">User approval waiting list</h4>
+                        <h4 class="card-title">Users Online Report</h4>
                     </div>
                     <div class="col-4 text-right">
-                        
+                        <a href="#" class="btn btn-sm btn-primary">Add user</a>
                     </div>
                 </div>
             </div>
 
             <div class="card-body">
-                
+                <!--
                 <div class="">
                     <table class="table tablesorter " id="">
                         <thead class=" text-primary">
                             <tr>
                             <th scope="col">Employee ID</th>
                             <th scope="col">Emplyoee Name</th>
-                            <th scope="col">Industry Location</th>
-                            <th scope="col">Division Location</th>
-                            <th scope="col">Department</th>
+                            <th scope="col">Last Page Visited</th>
+                            <th scope="col">Refered</th>
+                            <th scope="col">Logout Time</th>
                             <th scope="col"></th>
                         </tr></thead>
                         <tbody>
                                 <tr>
-                                    <td>1092352298</td>
-                                    <td>Benedict Cumberbatch</td>
-                                    <td>Chennai</td>
-                                    <td>Thoraipakkam</td>
-                                    <td>Production</td>
+                                    <td>1045452298</td>
+                                    <td> Jungkook</td>
+                                    <td>Waranty Documents</td>
+                                    <td>25/04/2020 09:11</td>
+                                    <td>25/04/2020 09:30</td>
                                     <td class="text-right">
                                         <div class="dropdown">
-                                        
                                             <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Approve
-                                            </a></td><td>
-                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            View
-                                            </a></td>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                            </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href="#">Edit</a>
                                         </div>
@@ -377,18 +358,15 @@
                                 </tr>
                                 <tr>
                                     <td>2458103947</td>
-                                    <td>Martin Freeman</td>
-                                    <td>Bangalore</td>
-                                    <td>Peenya</td>
-                                    <td>Engineering</td>
+                                    <td>Kim Taehyung</td>
+                                    <td>Testing certificate</td>
+                                    <td>26/03/2020 07:11</td>
+                                    <td>26/05/2020 10:00</td>
                                     <td class="text-right">
                                         <div class="dropdown">
-                                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Approve
-                                            </a></td><td>
                                             <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            View
-                                            </a></td>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                            </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href="#">Edit</a>
                                         </div>
@@ -397,18 +375,15 @@
                                 </tr>
                                 <tr>
                                     <td>8320381837</td>
-                                    <td>Edward Cullen</td>
-                                    <td>Chennai</td>
-                                    <td>Thoraipakkam</td>
-                                    <td>Quality Assurance</td>
+                                    <td>Park Jimin</td>
+                                    <td>CNC programs</td>
+                                    <td>29/01/2020 04:11</td>
+                                    <td>23/02/2020 9:00</td>
                                     <td class="text-right">
                                         <div class="dropdown">
-                                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Approve
-                                            </a></td><td>
                                             <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            View
-                                            </a></td>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                            </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href="#">Edit</a>
                                         </div>
@@ -419,8 +394,8 @@
                     </table>
                 </div>
                 
-            </div>
-    
+            </div>-->
+            
             <div class="card-footer py-4">
                 
                 <nav class="d-flex justify-content-end" aria-label="...">
@@ -430,77 +405,8 @@
         </div>
         
     </div>
-
-
-
-    <div id="filter-order" class="col-md-3 col-md-push-9 col-sm-12 hidden-sm hidden-xs" style="user-select: auto;">
-<div class="panel panel-default" style="user-select: auto;">
-<div class="panel-heading" style="user-select: auto;">
-<h3 class="panel-title" style="user-select: auto;"><i class="fa fa-filter" style="user-select: auto;"></i> Filter</h3>
 </div>
-<div class="panel-body" style="user-select: auto;">
-<div class="form-group" style="user-select: auto;">
-<label class="control-label" for="input-order-id" style="user-select: auto;">Employee ID</label>
-<input type="text" name="filter_order_id" value="" placeholder="Employee ID" id="input-order-id" class="form-control" style="user-select: auto;">
-</div>
-<div class="form-group" style="user-select: auto;">
-<label class="control-label" for="input-customer" style="user-select: auto;">Employee Name</label>
-<input type="text" name="filter_customer" value="" placeholder="Employee Name" id="input-customer" class="form-control" autocomplete="off" style="user-select: auto;"><ul class="dropdown-menu" style="user-select: auto;"></ul>
-</div>
-<div class="form-group" style="user-select: auto;">
-<label class="control-label" for="input-order-status" style="user-select: auto;">Industry Location</label>
-<select name="filter_order_status_id" id="input-order-status" class="form-control" style="user-select: auto;">
-<option value="" style="user-select: auto;"></option>
-<option value="0" style="user-select: auto;">Waranty Documents</option>
-<option value="7" style="user-select: auto;">Testing certificate</option>
-</select>
-</div>
-
-<div class="form-group" style="user-select: auto;">
-<label class="control-label" for="input-order-status" style="user-select: auto;">Division Location</label>
-<select name="filter_order_status_id" id="input-order-status" class="form-control" style="user-select: auto;">
-<option value="" style="user-select: auto;"></option>
-<option value="0" style="user-select: auto;">Waranty Documents</option>
-<option value="11" style="user-select: auto;">system software program</option>
-</select>
-</div>
-
-<div class="form-group" style="user-select: auto;">
-<label class="control-label" for="input-order-status" style="user-select: auto;">Department</label>
-<select name="filter_order_status_id" id="input-order-status" class="form-control" style="user-select: auto;">
-<option value="" style="user-select: auto;"></option>
-<option value="0" style="user-select: auto;">Waranty Documents</option>
-<option value="11" style="user-select: auto;">system software program</option>
-</select>
-</div>
-
-</div>
-<div class="form-group text-right" style="user-select: auto;">
-<button type="button" id="button-filter" class="btn btn-default" style="user-select: auto;"><i class="fa fa-filter" style="user-select: auto;"></i> Filter</button>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-
-
-    -->
-    
+                </div>
 
                 <!--<footer class="footer">
 <div class="container-fluid">

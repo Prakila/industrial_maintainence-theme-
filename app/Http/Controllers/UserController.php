@@ -18,4 +18,8 @@ class UserController extends Controller
     {
         return view('users.index', ['users' => $model->paginate(15)]);
     }
+    public function user_register(User $model)
+    {
+        return view('users.user_register', ['users' => $model->paginate(15)]);
+    }
 }

@@ -25,6 +25,30 @@
                                 <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email address') }}" value="{{ old('email', auth()->user()->email) }}">
                                 @include('alerts.feedback', ['field' => 'email'])
                             </div>
+
+                            <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
+                                <label>{{ _('Designation') }}</label>
+                                <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Designation') }}" value="{{ old('email', auth()->user()->email) }}">
+                                
+                            </div>
+
+                            <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
+                                <label>{{ _('Industry Location') }}</label>
+                                <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Industry Location') }}" value="{{ old('email', auth()->user()->email) }}">
+                                
+                            </div>
+
+                            <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
+                                <label>{{ _('Division Location') }}</label>
+                                <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Division Location') }}" value="{{ old('email', auth()->user()->email) }}">
+                                
+                            </div>
+
+                            <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
+                                <label>{{ _('Department Location') }}</label>
+                                <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Department Location') }}" value="{{ old('email', auth()->user()->email) }}">
+                                
+                            </div>
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-fill btn-primary">{{ _('Save') }}</button>
@@ -84,20 +108,7 @@
                         </div>
                     </p>
                     <div class="card-description">
-                        {{ _('Do not be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...') }}
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <div class="button-container">
-                        <button class="btn btn-icon btn-round btn-facebook">
-                            <i class="fab fa-facebook"></i>
-                        </button>
-                        <button class="btn btn-icon btn-round btn-twitter">
-                            <i class="fab fa-twitter"></i>
-                        </button>
-                        <button class="btn btn-icon btn-round btn-google">
-                            <i class="fab fa-google-plus"></i>
-                        </button>
+                        {{ _('A technical co-founder is a person who has their interests vested in the startup growth and business vision. This person brings the technical skills required in building, launching, monitoring, and scaling the product.') }}
                     </div>
                 </div>
             </div>

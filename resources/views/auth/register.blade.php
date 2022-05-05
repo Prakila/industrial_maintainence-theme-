@@ -1,43 +1,9 @@
 @extends('layouts.app', ['class' => 'register-page', 'page' => _('Register Page'), 'contentClass' => 'register-page'])
 
 @section('content')
-    <div class="row">
-        <div class="col-md-5 ml-auto">
-            <div class="info-area info-horizontal mt-5">
-                <div class="icon icon-warning">
-                    <i class="tim-icons icon-wifi"></i>
-                </div>
-                <div class="description">
-                    <h3 class="info-title">{{ _('Marketing') }}</h3>
-                    <p class="description">
-                        {{ _('We\'ve created the marketing campaign of the website. It was a very interesting collaboration.') }}
-                    </p>
-                </div>
-            </div>
-            <div class="info-area info-horizontal">
-                <div class="icon icon-primary">
-                    <i class="tim-icons icon-triangle-right-17"></i>
-                </div>
-                <div class="description">
-                    <h3 class="info-title">{{ _('Fully Coded in HTML5') }}</h3>
-                    <p class="description">
-                        {{ _('We\'ve developed the website with HTML5 and CSS3. The client has access to the code using GitHub.') }}
-                    </p>
-                </div>
-            </div>
-            <div class="info-area info-horizontal">
-                <div class="icon icon-info">
-                    <i class="tim-icons icon-trophy"></i>
-                </div>
-                <div class="description">
-                    <h3 class="info-title">{{ _('Built Audience') }}</h3>
-                    <p class="description">
-                        {{ _('There is also a Fully Customizable CMS Admin Dashboard for this product.') }}
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-7 mr-auto">
+    
+        
+        <div class="col-md-7 mr-auto ml-auto">
             <div class="card card-register card-white">
                 <div class="card-header">
                     <img class="card-img" src="{{ asset('white') }}/img/card-primary.png" alt="Card image">
@@ -64,6 +30,51 @@
                             </div>
                             <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email') }}" value="{{ old('email') }}">
                             @include('alerts.feedback', ['field' => 'email'])
+                        </div>
+                        <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-square-pin"></i>
+                                </div>
+                            </div>
+                            <input type="Location" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Industry Location') }}">
+                            @include('alerts.feedback', ['field' => 'password'])
+                        </div>
+                        <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-square-pin"></i>
+                                </div>
+                            </div>
+                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Division Location') }}">
+                            @include('alerts.feedback', ['field' => 'password'])
+                        </div>
+                        <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-square-pin "></i>
+                                </div>
+                            </div>
+                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Department') }}">
+                            @include('alerts.feedback', ['field' => 'password'])
+                        </div>
+                        <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-mobile "></i>
+                                </div>
+                            </div>
+                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Phone No') }}">
+                            @include('alerts.feedback', ['field' => 'password'])
+                        </div>
+                        <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-badge "></i>
+                                </div>
+                            </div>
+                            <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ _('Designation') }}">
+                            @include('alerts.feedback', ['field' => 'password'])
                         </div>
                         <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
                             <div class="input-group-prepend">
@@ -98,5 +109,5 @@
                 </form>
             </div>
         </div>
-    </div>
+    
 @endsection

@@ -1,14 +1,14 @@
 @extends('layouts.app', ['class' => 'login-page', 'page' => _('Login Page'), 'contentClass' => 'login-page'])
 
 @section('content')
-    <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+    <div class="col-lg-5 col-md-7 ml-auto mr-auto">
         <form class="form" method="post" action="{{ route('login') }}">
             @csrf
 
             <div class="card card-login card-white">
                 <div class="card-header">
                     <img src="{{ asset('white') }}/img/card-primary.png" alt="">
-                    <h1 class="card-title">{{ _('login') }}</h1>
+                    <h1 class="card-title">{{ _('Login') }}</h1>
                 </div>
                 <div class="card-body">
                     <div class="input-group{{ $errors->has('email') ? ' has-danger' : '' }}">
@@ -17,7 +17,7 @@
                                 <i class="tim-icons icon-email-85"></i>
                             </div>
                         </div>
-                        <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Email') }}">
+                        <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ _('Employee ID') }}">
                         @include('alerts.feedback', ['field' => 'email'])
                     </div>
                     <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">

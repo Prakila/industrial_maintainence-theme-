@@ -17792,7 +17792,7 @@ Copyright (c) 2015 Daniel Eden
   font-size: 5em;
   font-weight: 900;
   color: #222a42;
-  text-transform: lowercase;
+ /* text-transform: lowercase;*/
   margin-left: -5px;
   z-index: 1;
 }
