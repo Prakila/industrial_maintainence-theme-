@@ -131,7 +131,7 @@
                                             <li class="active" >
                                                 <a href="{{ route('user.index')  }}">
                                                     <i class="tim-icons icon-badge"></i>
-                                                    <p>{{ _('Registered User') }}</p>
+                                                    <p>{{ _('Employee') }}</p>
                                                 </a>
                                             </li>
                                             <li class="active" >
@@ -143,35 +143,17 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <!--<li >
+                                <li >
                                     <a href="{{ route('pages.icons') }}">
-                                        <i class="tim-icons icon-atom"></i>
-                                        <p>{{ _('Icons') }}</p>
+                                        <i class="tim-icons icon-components"></i>
+                                        <p>{{ _('Industry Branch') }}</p>
                                     </a>
-                                </li>-->
+                                </li>
                                 <li>
                                     <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
                                         <i class="tim-icons icon-atom"></i>
-                                        <span class="nav-link-text" >{{ __('Plant Management') }}</span>
+                                        <span class="nav-link-text" >{{ __('Industrial Management') }}</span>
                                     </a>
-                    
-                                    <div class="collapse show" id="laravel-examples">
-                                        <ul class="nav pl-4">
-                                            <li >
-                                                <a href="{{ route('profile.edit')  }}">
-                                                    <i class="tim-icons icon-components"></i>
-                                                    <p>{{ _('Workcenter') }}</p>
-                                                </a>
-                                            </li>
-                                            <li class="active" >
-                                                <a href="{{ route('user.index')  }}">
-                                                    <i class="tim-icons icon-paper"></i>
-                                                    <p>{{ _('Workcenter Report') }}</p>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
                                 </li>
                                 <li >
                                     <a href="{{ route('pages.maps') }}">

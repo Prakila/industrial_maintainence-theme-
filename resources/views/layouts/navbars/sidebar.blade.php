@@ -102,11 +102,9 @@
                     <p>{{ _('Machinary Programs') }}</p>
                 </a>
             </li>
-           
         </ul>
     </div>
 </div>
-
 -->
 
 
@@ -141,7 +139,7 @@
                         <li @if ($pageSlug == 'users') class="active " @endif>
                             <a href="{{ route('user.index')  }}">
                                 <i class="tim-icons icon-badge"></i>
-                                <p>{{ _('Registered User') }}</p>
+                                <p>{{ _('Employee') }}</p>
                             </a>
                         </li>
                         <li @if ($pageSlug == 'users') class="active " @endif>
@@ -153,32 +151,17 @@
                     </ul>
                 </div>
             </li>
-
-            
-
-            <li>
-                <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
-                <i class="tim-icons icon-atom"></i>
-                    <span class="nav-link-text" >{{ __('Plant Management') }}</span>
-                    <b class="caret mt-1"></b>
+            <li @if ($pageSlug == 'icons') class="active " @endif>
+                <a href="{{ route('pages.icons') }}">
+                    <i class="tim-icons icon-components"></i>
+                    <p>{{ _('Industry Branch') }}</p>
                 </a>
-
-                <div class="collapse show" id="laravel-examples">
-                    <ul class="nav pl-4">
-                        <li @if ($pageSlug == 'profile') class="active " @endif>
-                            <a href="{{ route('profile.edit')  }}">
-                                <i class="tim-icons icon-components"></i>
-                                <p>{{ _('Workcenter') }}</p>
-                            </a>
-                        </li>
-                        <li @if ($pageSlug == 'users') class="active " @endif>
-                            <a href="{{ route('user.index')  }}">
-                                <i class="tim-icons icon-paper"></i>
-                                <p>{{ _('Workcenter Report') }}</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            </li>
+             <li @if ($pageSlug == 'maps') class="active " @endif>
+                <a href="{{ route('pages.maps') }}">
+                    <i class="tim-icons icon-atom"></i>
+                    <p>{{ _('Industrial Management') }}</p>
+                </a>
             </li>
             
             
@@ -200,7 +183,7 @@
                     <p>{{ _('Machinary Programs') }}</p>
                 </a>
             </li>
-           
+                
         </ul>
     </div>
 </div>
